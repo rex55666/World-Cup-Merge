@@ -1,0 +1,8 @@
+"eslintConfig": {
+    
+    "globals": {
+        
+        "window": true
+    
+    }
+}

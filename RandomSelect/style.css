@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+li{
+    text-align: left;
+    color: RGB(100,20,150);
+    font-size: 25px;
+}
+H1{
+    color: crimson;
+    font-weight: 700;
+    font-size: 80px;
+}
+

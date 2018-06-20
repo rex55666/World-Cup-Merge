@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-weight: 600;
+    font-family:cursive;
+    font-size: 3em
+}
+
+table{
+    width: 60%;
+    margin: auto;
+    font-size: 1em;
+}
+
+th{
+    font-size: 1.8em;
+    border: 1px solid red;    
+}
+
+td{
+    
+    border-bottom: 1px groove blue;
+}
