@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    $("#courseTable").append("<tr><th>場次</th><th>時間</th><th>主題</th><th>狀態</th></tr>")
+    $("#courseTable").append("<tr><th>場次</th><th>時間</th><th>重要賽事</th><th>狀態</th></tr>")
     
     var topicCount = topic.length;
     
@@ -14,12 +14,12 @@ $(document).ready(function(){
         {
            $("#courseTable").append("<tr>");
            $("#courseTable").append("<td>"+(x+1)+"</td>");
-           $("#courseTable").append("<td>"+(new Date ((startDate.getTime()+x*7*dayUnit))).toLocaleDateString().slice(5)+"</td>");
+           $("#courseTable").append("<td>"+(new Date ((startDate.getTime()+x*1*dayUnit))).toLocaleDateString().slice(5)+"</td>");
            $("#courseTable").append("<td>"+topic[x]+"</td>");
-          if(Today.getTime()-new Date(startDate.getTime()+x*7*dayUnit)>86400000){
+          if(Today.getTime()-new Date(startDate.getTime()+x*1*dayUnit)>86400000){
                $("#courseTable").append("<td>"+"已結束"+"</td>");
            }
-           else if(0<Today.getTime()-new Date(startDate.getTime()+x*7*dayUnit)&Today.getTime()-new Date(startDate.getTime()+x*7*dayUnit)<=86400000){
+           else if(0<Today.getTime()-new Date(startDate.getTime()+x*1*dayUnit)&Today.getTime()-new Date(startDate.getTime()+x*1*dayUnit)<=86400000){
                $("#courseTable").append("<td>"+"今天"+"</td>");
            }
            else {
